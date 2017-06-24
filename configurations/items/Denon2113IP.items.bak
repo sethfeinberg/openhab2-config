@@ -1,0 +1,45 @@
+/*  Roof Media Center */
+/*   Roof Media Center IP */
+/*    Roof Media Center AVR Controls (IP) */
+/*     Roof Media Center AVR Controls (IP) - Main Zone */
+Switch AV_Denon2113_IP_MainPower "Denon Main Power" (gRoof_MC_IP_Denon) { denon="avr2113#PW" }
+/*      Roof Media Center AVR Controls (IP) - Main Zone Audio */
+String AV_Denon2113_IP_SurroundMode "Surround Mode [%s]" (gRoof_MC_IP_Denon) { denon="avr2113#SURROUNDMODE" }
+Dimmer AV_Denon2113_IP_MainVolume "Denon Main Volume [%.1f]" (gRoof_MC_IP_Denon) { denon"avr2113#MV" }
+Switch AV_Denon2113_IP_MainMute "Denon Main Mute" (gRoof_MC_IP_Denon) { denon="avr2113#MU" }
+Switch AV_Denon2113_IP_AudioMovie "Denon audio(Movie)" (gRoof_MC_IP_Denon) { denon="avr2113#MSMOVIE" }
+Switch AV_Denon2113_IP_AudioMusic "Denon audio(Music)" (gRoof_MC_IP_Denon) { denon="avr2113#MSMUSIC" }
+Switch AV_Denon2113_IP_AudioGame "Denon audio(Game)" (gRoof_MC_IP_Denon) { denon="avr2113#MSGAME" }
+Switch AV_Denon2113_IP_AudioDirect "Denon audio(Direct)" (gRoof_MC_IP_Denon) { denon="avr2113#MSDIRECT" }
+/*      Roof Media Center AVR Controls (IP) - Main Zone Inputs */
+Switch AV_Denon2113_IP_MainInputTV "Denon Main input(TV Audio)" (gRoof_MC_IP_Denon) { denon="avr2113#SITV" }
+Switch AV_Denon2113_IP_MainInputAUX "Denon Main input(PS4)" (gRoof_MC_IP_Denon) { denon="avr2113#SIAUX1" }
+Switch AV_Denon2113_IP_MainInputBluray "Denon Main input(Blu-ray)" (gRoof_MC_IP_Denon) { denon="avr2113#SIBD" }
+Switch AV_Denon2113_IP_MainInputCBLSAT "Denon Main input(Wii)" (gRoof_MC_IP_Denon) { denon="avr2113#SISAT/CBL" }
+Switch AV_Denon2113_IP_MainInputCD "Denon Main input(CD)" (gRoof_MC_IP_Denon) { denon="avr2113#SICD" }
+Switch AV_Denon2113_IP_MainInputDVD "Denon Main input(DirecTV)" (gRoof_MC_IP_Denon) { denon="avr2113#SIDVD" }
+Switch AV_Denon2113_IP_MainInputTuner "Denon Main input(Tuner)" (gRoof_MC_IP_Denon) { denon="avr2113#SITUNER" }
+Switch AV_Denon2113_IP_MainInputGame "Denon Main input(HELPeR)" (gRoof_MC_IP_Denon) { denon="avr2113#SIGAME" }
+Switch AV_Denon2113_IP_MainInputSpotify "Denon Main input(Spotify)" (gRoof_MC_IP_Denon) { denon="avr2113#SISPOTIFY" }
+Switch AV_Denon2113_IP_MainInputInternetRadio "Denon Main input(Internet Radio)" (gRoof_MC_IP_Denon) { denon="avr2113#SIIRP" }
+Switch AV_Denon2113_IP_MainInputMediaPlayer "Denon Main input(Batcomputer)" (gRoof_MC_IP_Denon) { denon="avr2113#SIMPLAY" }
+Switch AV_Denon2113_IP_MainInputUSB "Denon Main input(iPod/USB)" (gRoof_MC_IP_Denon) { denon="avr2113#SIUSB/IPOD" }
+Switch AV_Denon2113_IP_MainInputNetwork "Denon Main input(Network)" (gRoof_MC_IP_Denon) { denon="avr2113#SINET" }
+/*     Roof Media Center AVR Controls (IP) - Zone 2 */
+Switch AV_Denon2113_IP_Z2Power "Denon Z2 Power" (gRoof_MC_IP_Denon) { denon="avr2113#Z2" }
+Dimmer AV_Denon2113_IP_Z2Volume "Denon Z2 Volume [%.1f]" (gRoof_MC_IP_Denon) { denon"avr2113#Z2ZV" }
+Switch AV_Denon2113_IP_MainMute "Denon Z2 Mute" (gRoof_MC_IP_Denon) { denon="avr2113#Z2MU" }
+/*      Roof Media Center AVR Controls (IP) - Zone 2 Inputs */
+Switch AV_Denon2113_IP_Z2InputTV "Denon Z2 input(TV Audio)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2TV" }
+Switch AV_Denon2113_IP_Z2InputAUX "Denon Z2 input(PS4)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2AUX1" }
+Switch AV_Denon2113_IP_Z2InputBluray "Denon Z2 input(Blu-ray)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2BD" }
+Switch AV_Denon2113_IP_Z2InputCBLSAT "Denon Z2 input(Wii)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2SAT/CBL" }
+Switch AV_Denon2113_IP_Z2InputCD "Denon Z2 input(CD)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2CD" }
+Switch AV_Denon2113_IP_Z2InputDVD "Denon Z2 input(DirecTV)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2DVD" }
+Switch AV_Denon2113_IP_Z2InputTuner "Denon Z2 input(Tuner)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2TUNER" }
+Switch AV_Denon2113_IP_Z2InputGame "Denon Z2 input(HELPeR)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2GAME" }
+Switch AV_Denon2113_IP_Z2InputSpotify "Denon Z2 input(Spotify)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2SPOTIFY" }
+Switch AV_Denon2113_IP_Z2InputInternetRadio "Denon Z2 input(Internet Radio)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2IRP" }
+Switch AV_Denon2113_IP_Z2InputMediaPlayer "Denon Z2 input(Batcomputer)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2MPLAY" }
+Switch AV_Denon2113_IP_Z2InputUSB "Denon Z2 input(iPod/USB)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2USB/IPOD" }
+Switch AV_Denon2113_IP_Z2InputNetwork "Denon Z2 input(Network)" (gRoof_MC_IP_Denon) { denon="avr2113#Z2NET" }

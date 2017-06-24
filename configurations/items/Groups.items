@@ -1,0 +1,64 @@
+/* Groups */
+Group gAll
+
+/*  Location Groups */
+Group gMR "Main Room" (gAll)
+Group gMBR "Master Bedroom" (gAll)
+Group gGBR "Guest Bedroom" (gAll)
+Group gRoof "Roof" (gAll)
+
+/*  Item Groups */
+Group gLights "Lights" (gAll)
+Group gOutlets "Outlets" (gAll)
+Group gInsteon "Insteon Devices" (gAll)
+Group gIR "IR Control" (gAll)
+Group gIP "IP Control" (gAll)
+
+/*  Misc Groups */
+Group gWeather (gAll)
+Group gStatus (gAll)
+Group gMyOpenHAB "MyOpenHAB" <web> (gAll)
+Group gWoL "WoL" <video> (gAll)
+Group gPresence "Presence" (gAll)
+
+/*  Macro Groups */
+Group gMacros (gAll)
+Group gPowerMacros (gMacros)
+Group gStateMacros (gMacros)
+
+/*  Media Center Groups */
+/*   Media Center Location Groups */
+Group gMR_MC "Main Room Media Center" <video> (gMR)
+Group gMBR_MC "Master Bedroom Media Center" <video> (gMBR)
+Group gGBR_MC "Guest Bedroom Media Center" <video> (gGBR)
+Group gRoof_MC "Roof Media Center" <video> (gRoof)
+
+/*   Main Room Media Center Groups */
+/*    Main Room Media Center Protocol Groups */
+Group gMR_MC_IR "Main Room Media Center IR" <video> (gIR)
+Group gMR_MC_IP "Main Room Media Center IP" <video> (gIP)
+
+/*    Main Room Media Center Item Groups */
+Group gMR_MC_IR_TV "Sharp TV IR" <video> (gMR_MC, gMR_MC_IR)
+Group gMR_MC_IR_Bluray "Blu-ray Player" <video> (gMR_MC, gMR_MC_IR)
+Group gMR_MC_IR_DirecTV "DirecTV HR-24" <video> (gMR_MC, gMR_MC_IR)
+Group gMR_MC_IR_Denon "Denon AVR IR" <video> (gMR_MC, gMR_MC_IR)
+Group gMR_MC_IP_TV "Sharp TV IP" <video> (gMR_MC, gMR_MC_IP)
+Group gMR_MC_IP_Denon "Denon AVR IP" <video> (gMR_MC, gMR_MC_IP)
+Group gMR_MC_IP_HELPeR "HELPeR IP" <video> (gMR_MC, gMR_MC_IP)
+
+/*   Master Bedroom Media Center Groups */
+/*    Master Bedroom Media Center Protocol Groups */
+Group gMBR_MC_IR "Master Bedroom Media Center IR" <video> (gIR)
+Group gMBR_MC_IP "Master Bedroom Media Center IP" <video> (gIP)
+
+/*    Master Bedroom Media Center Item Groups */
+Group gMBR_MC_IP_GIR "GIR IP" <video> (gMBR_MC, gMBR_MC_IP)
+
+/*   Roof Media Center Groups */
+/*    Master Bedroom Media Center Protocol Groups */
+Group gRoof_MC_IR "Roof Media Center IR" <video> (gIR)
+Group gRoof_MC_IP "Roof Media Center IP" <video> (gIP)
+
+/*    Roof Media Center Item Groups */
+Group gRoof_MC_IP_RoofMini "Roof Mini IP" <video> (gRoof_MC, gRoof_MC_IP)

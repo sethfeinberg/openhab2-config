@@ -1,0 +1,20 @@
+import org.openhab.core.library.types.*
+
+rule "PS4 Power Macro ON"
+when
+	Item PS4PowerMacro received command ON
+then
+  sendCommand(AV_TV_IP_Power, ON)
+  sendCommand(AV_Denon3300_IP_Power, ON)
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon3300_IP_AudioGame, ON)
+  sendCommand(AV_Denon3300_IP_MainInputGame, ON)
+end
+
+rule "PS4 Power Macro OFF"
+when
+	Item PS4PowerMacro received command OFF
+then
+  sendCommand(AV_TV_IP_Power, OFF)
+  sendCommand(AV_Denon3300_IP_Power, OFF)
+end

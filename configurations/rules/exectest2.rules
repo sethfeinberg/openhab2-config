@@ -1,0 +1,9 @@
+import org.openhab.core.library.types.*
+
+rule "ExecTest2"
+when
+	Item ExecTest2 received command
+then
+	val results = executeCommandLine('/usr/bin/ssh openhab@10.10.10.51 /usr/bin/sudo /home/seth/scripts/PSUoff.py')
+	logInfo("ExecLog", results)
+end

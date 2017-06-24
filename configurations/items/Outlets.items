@@ -1,0 +1,3 @@
+/*  Outlets */
+Switch Outlet_Coffee "Coffee Outlet" <socket> (gMR, gOutlets, gInsteon, gMyOpenHAB) { insteonplm="2c.18.dd:0x000023#switch" }
+Switch Outlet_Volcano "Volcano Outlet" <socket> (gMR, gOutlets, gInsteon, gMyOpenHAB) { insteonplm="0e.99.63:0x000023#switch" }

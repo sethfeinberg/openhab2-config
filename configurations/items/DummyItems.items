@@ -1,0 +1,31 @@
+/* Dummy Items */
+
+/*  Test Items */
+Switch ExecTest
+Switch ExecTest2
+
+/*  Presence Items */
+Switch SethPresence "Seth Presence" (gPresence, gMyOpenHAB)
+Switch RachelPresence "Rachel Presence" (gPresence, gMyOpenHAB)
+
+/*  Macro Items */
+
+/*   Power Macros */
+Switch HTPCPowerMacro "HTPC Power Macro" (gPowerMacros)
+Switch BatcomputerPowerMacro "Batcomputer Power Macro" (gPowerMacros)
+Switch DirecTVPowerMacro "DirecTV Power Macro" (gPowerMacros)
+Switch BlurayPowerMacro "Bluray Power Macro" (gPowerMacros)
+Switch PS4PowerMacro "PS4 Power Macro" (gPowerMacros)
+Switch WiiPowerMacro "Wii Power Macro" (gPowerMacros)
+Switch OTATVPowerMacro "OTA TV Power Macro" (gPowerMacros)
+Switch AllPowerOff "Power All Off" (gPowerMacros)
+
+/*   State Macros */
+Switch HTPCStateMacro "HTPC State Macro" (gStateMacros)
+Switch BatcomputerStateMacro "Batcomputer State Macro" (gStateMacros)
+Switch DirecTVStateMacro "DirecTV State Macro" (gStateMacros)
+Switch BlurayStateMacro "Bluray State Macro" (gStateMacros)
+Switch PS4StateMacro "PS4 State Macro" (gStateMacros)
+Switch WiiStateMacro "Wii State Macro" (gStateMacros)
+Switch WiiwMusicStateMacro "Wii w/ Music State Macro" (gStateMacros)
+Switch OTATVStateMacro "OTA TV State Macro" (gStateMacros)

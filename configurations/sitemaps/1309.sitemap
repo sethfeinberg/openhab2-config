@@ -1,0 +1,24 @@
+sitemap home label="1309 N Greenview Ave #3"
+{
+	Frame label="Lights" {
+		Switch item=Light_Roof_LEDs label="Roof LEDs"
+		Switch item=Light_MR_Main label="Main Lights"
+		Switch item=Light_Upstairs label="Upstairs Light"
+	}
+	Frame label="Outlets" {
+		Switch item=Outlet_Coffee label="Coffee Outlet"
+		Switch item=Outlet_Volcano label="Volcano Outlet"
+	}
+	Frame label="Home Theater" {
+		Slider item=AV_Denon3300_IP_MainVolume label="Volume [%.1f]"
+		Group item=gPowerMacros label="Power Macros"
+		Group item=gStateMacros label="State Macros"
+		Switch item=AV_HELPeR_IP_WoL label="Wake HTPC" mappings=[ON="Wake"]
+		Group item=gMR_MC label="Media Center"
+	}
+/*	Frame label="Tests" {
+	Switch item=ExecTest label="PSUonTest"
+	Switch item=ExecTest2 label="PSUoffTest"
+	}
+*/
+}

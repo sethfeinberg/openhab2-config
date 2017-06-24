@@ -1,0 +1,23 @@
+/*  Main Room Media Center */
+/*   Main Room Media Center IR */
+/*    Main Room Media Center TV Controls (IR) */
+Switch AV_TV_IR_Power "TV Power" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_POWER] >[OFF:/usr/bin/irsend SEND_ONCE sharptv KEY_POWER]" }
+Switch AV_TV_IR_Display "TV Display" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_D]", autoupdate="false" }
+Switch AV_TV_IR_Option "TV Option" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_OPTION]", autoupdate="false" }
+Switch AV_TV_IR_Sleep "TV Sleep" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_SLEEP]", autoupdate="false" }
+Switch AV_TV_IR_ViewMode "TV View Mode" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_MODE]", autoupdate="false" }
+Switch AV_TV_IR_AVMode "TV AV Mode" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_VIDEO]", autoupdate="false" }
+Switch AV_TV_IR_Volume "TV Volume" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_VOLUMEUP] >[OFF:/usr/bin/irsend SEND_ONCE sharptv KEY_VOLUMEDOWN]", autoupdate="false" }
+Switch AV_TV_IR_Channel "TV Channel" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_CHANNELUP] >[OFF:/usr/bin/irsend SEND_ONCE sharptv KEY_CHANNELDOWN]", autoupdate="false" }
+Switch AV_TV_IR_Mute "TV Mute" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_MUTE] >[OFF:/usr/bin/irsend SEND_ONCE sharptv KEY_MUTE]" }
+Switch AV_TV_IR_Up "TV Up" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_UP]", autoupdate="false" }
+Switch AV_TV_IR_Down "TV Down" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_DOWN]", autoupdate="false" }
+Switch AV_TV_IR_Left "TV Left" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_LEFT]", autoupdate="false" }
+Switch AV_TV_IR_Right "TV Right" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_RIGHT]", autoupdate="false" }
+Switch AV_TV_IR_Enter "TV Enter" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_ENTER]", autoupdate="false" }
+Switch AV_TV_IR_Back "TV Back" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_PREVIOUS]", autoupdate="false" }
+Switch AV_TV_IR_Exit "TV Exit" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_EXIT]", autoupdate="false" }
+Switch AV_TV_IR_Menu "TV Menu" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_MENU]", autoupdate="false" }
+Switch AV_TV_IR_Input "TV Input" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_LIST]", autoupdate="false" }
+Switch AV_TV_IR_Freeze "TV Freeze" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_F]", autoupdate="false" }
+Switch AV_TV_IR_3D "TV 3D" (gMR_MC_IR_TV) { exec=">[ON:/usr/bin/irsend SEND_ONCE sharptv KEY_F3]", autoupdate="false" }

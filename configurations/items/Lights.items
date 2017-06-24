@@ -1,0 +1,7 @@
+/*  Lights */
+Dimmer Light_MR_Main "MR Lights %d %%" <slider> (gMR, gLights, gInsteon, gMyOpenHAB) { insteonplm="1c.a2.ed:F00.00.01#dimmer" }
+Switch Light_Upstairs "Upstairs Lights" <switch> (gMR, gRoof, gLights, gInsteon, gMyOpenHAB) { insteonplm="3b.d9.e9:F00.00.02#switch" }
+Switch Light_Roof_LEDs "Roof LEDs" <switch> (gRoof, gLights, gIP, gMyOpenHAB) { exec=">[ON:/usr/bin/ssh openhab@10.10.10.51 /usr/bin/sudo /home/seth/scripts/manpwrtoggle.py] >[OFF:/usr/bin/ssh openhab@10.10.10.51 /usr/bin/sudo /home/seth/scripts/manpwrtoggle.py]" }
+/*   Candle IR Control */
+Switch Candles_IR_Power "Candles Power" (gMR_MC_IR, gLights) { exec=">[ON:/usr/bin/irsend SEND_ONCE candles KEY_UP] >[OFF:/usr/bin/irsend SEND_ONCE candles KEY_DOWN]" }
+Switch Candles_IR_AllPower "Candles All Power" (gMR_MC_IR, gLights) { exec=">[ON:/usr/bin/irsend SEND_ONCE candles KEY_5] >[OFF:/usr/bin/irsend SEND_ONCE candles KEY_0]" }

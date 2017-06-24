@@ -1,0 +1,20 @@
+import org.openhab.core.library.types.*
+
+rule "OTA TV Power Macro ON"
+when
+	Item OTATVPowerMacro received command ON
+then
+  sendCommand(AV_TV_IP_Power, ON)
+  sendCommand(AV_Denon3300_IP_Power, ON)
+  sendCommand(AV_TV_IP_InputTV, ON)
+  sendCommand(AV_Denon3300_IP_AudioMusic, ON)
+  sendCommand(AV_Denon3300_IP_MainInputTV, ON)
+end
+
+rule "OTA TV Power Macro OFF"
+when
+	Item OTATVPowerMacro received command OFF
+then
+  sendCommand(AV_TV_IP_Power, OFF)
+  sendCommand(AV_Denon3300_IP_Power, OFF)
+end

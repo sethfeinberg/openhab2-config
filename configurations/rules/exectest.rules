@@ -1,0 +1,9 @@
+import org.openhab.core.library.types.*
+
+rule "ExecTest"
+when
+	Item ExecTest received command
+then
+	val results = executeCommandLine('/usr/bin/ssh openhab@10.10.10.51 /usr/bin/sudo /home/seth/scripts/PSUon.py')
+	logInfo("ExecLog", results)
+end

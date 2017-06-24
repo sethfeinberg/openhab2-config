@@ -1,0 +1,5 @@
+/*    WoL items */
+Switch AV_HELPeR_IP_WoL "Wake HTPC" (gMR_MC_IP_HELPeR, gWoL) { wol="10.10.10.255#bc:5f:f4:ba:2c:f2", autoupdate="false" }
+Switch AV_Batcomputer_IP_WoL "Wake Batcomputer" (gMR_MC_IP_Batcomputer, gWoL) { wol="10.10.10.255#bc:5f:f4:be:7d:d4", autoupdate="false" }
+Switch AV_GIR_IP_WoL "Wake GIR" (gMBR_MC_IP_GIR, gWoL) { wol="10.10.10.255#bc:5f:f4:a3:6a:4c", autoupdate="false" }
+Switch AV_RoofMini_IP_WoL "Wake Roof Mac Mini" (gRoof_MC_IP_RoofMini, gWoL) { wol="10.10.10.255#40:6c:8f:2e:27:2d", autoupdate="false" }

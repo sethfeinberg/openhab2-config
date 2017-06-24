@@ -1,0 +1,8 @@
+<xml>
+ <device productKey="0x000023">
+  <model>2473S</model>
+  <description>OutletLinc Remote Control Outlet</description>
+  <feature name="switch">GenericSwitch</feature>
+  <feature name="lastheardfrom">GenericLastTime</feature>
+ </device>
+</xml>

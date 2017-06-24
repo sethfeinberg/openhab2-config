@@ -1,0 +1,35 @@
+/*  Main Room Media Center */
+/*   Main Room Media Center IP */
+/*    Main Room Media Center TV Controls (IP) */
+Switch AV_TV_IP_Power "TV Power" (gMR_MC_IP_TV) { exec=">[ON:/var/lib/openhab/bin/sharptv.sh POWR1] >[OFF:/var/lib/openhab/bin/sharptv.sh POWR0]" }
+Switch AV_TV_IP_Mute "TV Mute" (gMR_MC_IP_TV) { exec=">[ON:/var/lib/openhab/bin/sharptv.sh MUTE1] >[OFF:/var/lib/openhab/bin/sharptv.sh MUTE0]" }
+Switch AV_TV_IP_InputToggle "TV Input Toggle" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh ITGDx]", autoupdate="false" }
+Switch AV_TV_IP_ChannelUD "TV Channel" (gMR_MC_IP_TV) { exec=">[ON:/var/lib/openhab/bin/sharptv.sh CHUPx] >[OFF:/var/lib/openhab/bin/sharptv.sh CHDWx]" }
+Switch AV_TV_IP_3D "TV 3D" (gMR_MC_IP_TV) { exec=">[ON:/var/lib/openhab/bin/sharptv.sh TDCH6] >[OFF:/var/lib/openhab/bin/sharptv.sh TDCH0]" }
+Switch AV_TV_IP_Ent "TV Ent" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY11]", autoupdate="false" }
+Switch AV_TV_IP_Enter "TV Enter" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY40]", autoupdate="false" }
+Switch AV_TV_IP_Display "TV Display" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY13]", autoupdate="false" }
+Switch AV_TV_IP_Option "TV Option" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY23]", autoupdate="false" }
+Switch AV_TV_IP_Sleep "TV Sleep" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY24]", autoupdate="false" }
+Switch AV_TV_IP_Return "TV Return" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY45]", autoupdate="false" }
+Switch AV_TV_IP_Exit "TV Exit" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY46]", autoupdate="false" }
+Switch AV_TV_IP_Freeze "TV Freeze" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY54]", autoupdate="false" }
+Switch AV_TV_IP_Menu "TV Menu" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY38]", autoupdate="false" }
+Switch AV_TV_IP_Dot "TV ." (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY10]", autoupdate="false" }
+Switch AV_TV_IP_CC "TV CC" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh RCKY27]", autoupdate="false" }
+/*     Main Room Media Center TV Controls (IP) - inputs */
+Switch AV_TV_IP_InputTV "TV input(TV)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh ITVD0]", autoupdate="false" }
+Switch AV_TV_IP_InputHDMI1 "TV input(HDMI1)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD1]", autoupdate="false" }
+Switch AV_TV_IP_InputHDMI2 "TV input(HDMI2)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD2]", autoupdate="false" }
+Switch AV_TV_IP_InputHDMI3 "TV input(HDMI3)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD3]", autoupdate="false" }
+Switch AV_TV_IP_InputHDMI4 "TV input(HDMI4)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD4]", autoupdate="false" }
+Switch AV_TV_IP_InputComponent "TV input(Component)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD5]", autoupdate="false" }
+Switch AV_TV_IP_InputVideo "TV input(Video)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD6]", autoupdate="false" }
+Switch AV_TV_IP_InputVideo2 "TV input(Video2)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD7]", autoupdate="false" }
+Switch AV_TV_IP_InputPC "TV input(PC)" (gMR_MC_IP_TV) { exec=">[*:/var/lib/openhab/bin/sharptv.sh IAVD8]", autoupdate="false" }
+/* experimental */
+Dimmer AV_TV_IP_ChannelDimmer "TV Channel [%d]"  (gMR_MC_IP_TV) { exec=">[INCREASE:/var/lib/openhab/bin/sharptv.sh CHUPx] >[DECREASE:/var/lib/openhab/bin/sharptv.sh CHDWx]" }
+//Number AV_TV_IP_ChannelNumber "TV Channel [%d]" (gMR_MC_IP_TV { exec=">[*:/var/lib/openhab/bin/sharptv.sh DA2U*** \r\" | /bin/nc 10.10.10.63 10002]", autoupdate="false" }
+//Number AV_TV_IP_VolumeNumber "TV Volume [%.1f]" (gMR_MC_IP_TV { exec=">[*:/var/lib/openhab/bin/sharptv.sh VOLM]", autoupdate="false" }
+//Dimmer AV_TV_IP_VolumeDimmer "TV Volume [%d]"  (gMR_MC_IP_TV) { exec=">[INCREASE:/var/lib/openhab/bin/sharptv.sh CHUPx] >[DECREASE:/var/lib/openhab/bin/sharptv.sh CHDWx]" }
+//Switch AV_TV_IP_Power2 "TV Power 2" (gMR_MC_IP_TV) { exec =">[ON:sharptv.script POWR1] >[OFF:sharptv.script POWR0]" }

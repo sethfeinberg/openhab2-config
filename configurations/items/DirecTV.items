@@ -1,0 +1,43 @@
+/*  Main Room Media Center */
+/*   Main Room Media Center IR */
+/*    Main Room Media Center DirecTV IR Controls */
+Switch AV_DirecTV_IR_Power "DirecTV Power" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_POWER] >[OFF:/usr/bin/irsend SEND_ONCE directv KEY_POWER]" }
+Switch AV_DirecTV_IR_Rewind "DirecTV Rewind" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_REWIND]", autoupdate="false" }
+Switch AV_DirecTV_IR_FF "DirecTV Fast Forward" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_FASTFORWARD]", autoupdate="false" }
+Switch AV_DirecTV_IR_Play "DirecTV Play" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_PLAY]", autoupdate="false" }
+Switch AV_DirecTV_IR_Pause "DirecTV Pause" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_PAUSE]", autoupdate="false" }
+Switch AV_DirecTV_IR_Record "DirecTV Record" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_RECORD]", autoupdate="false" }
+Switch AV_DirecTV_IR_Next "DirecTV Next" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_NEXT]", autoupdate="false" }
+Switch AV_DirecTV_IR_List "DirecTV List" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_LIST]", autoupdate="false" }
+Switch AV_DirecTV_IR_Exit "DirecTV Exit" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_EXIT]", autoupdate="false" }
+Switch AV_DirecTV_IR_Active "DirecTV Active" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_A]", autoupdate="false" }
+Switch AV_DirecTV_IR_Guide "DirecTV Guide" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_G]", autoupdate="false" }
+Switch AV_DirecTV_IR_Up "DirecTV Up" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_UP]", autoupdate="false" }
+Switch AV_DirecTV_IR_Left "DirecTV Left" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_LEFT]", autoupdate="false" }
+Switch AV_DirecTV_IR_Right "DirecTV Right" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_RIGHT]", autoupdate="false" }
+Switch AV_DirecTV_IR_Down "DirecTV Down" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_DOWN]", autoupdate="false" }
+Switch AV_DirecTV_IR_Menu "DirecTV Menu" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_MENU]", autoupdate="false" }
+Switch AV_DirecTV_IR_Info "DirecTV Info" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_INFO]", autoupdate="false" }
+Switch AV_DirecTV_IR_Red "DirecTV Red" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_RED]", autoupdate="false" }
+Switch AV_DirecTV_IR_Green "DirecTV Green" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_GREEN]", autoupdate="false" }
+Switch AV_DirecTV_IR_Yellow "DirecTV Yellow" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_YELLOW]", autoupdate="false" }
+Switch AV_DirecTV_IR_Blue "DirecTV Blue" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_BLUE]", autoupdate="false" }
+Switch AV_DirecTV_IR_Mute "DirecTV Mute" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_MUTE]", autoupdate="false" }
+Switch AV_DirecTV_IR_Channel "DirecTV Channel" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_CHANNELUP] >[OFF:/usr/bin/irsend SEND_ONCE directv KEY_CHANNELDOWN]" }
+Switch AV_DirecTV_IR_1 "DirecTV 1" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_1]", autoupdate="false" }
+Switch AV_DirecTV_IR_2 "DirecTV 2" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_2]", autoupdate="false" }
+Switch AV_DirecTV_IR_3 "DirecTV 3" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_3]", autoupdate="false" }
+Switch AV_DirecTV_IR_4 "DirecTV 4" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_4]", autoupdate="false" }
+Switch AV_DirecTV_IR_5 "DirecTV 5" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_5]", autoupdate="false" }
+Switch AV_DirecTV_IR_6 "DirecTV 6" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_6]", autoupdate="false" }
+Switch AV_DirecTV_IR_7 "DirecTV 7" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_7]", autoupdate="false" }
+Switch AV_DirecTV_IR_8 "DirecTV 8" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_8]", autoupdate="false" }
+Switch AV_DirecTV_IR_9 "DirecTV 9" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_9]", autoupdate="false" }
+Switch AV_DirecTV_IR_0 "DirecTV 0" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_0]", autoupdate="false" }
+Switch AV_DirecTV_IR_Enter "DirecTV Enter" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_ENTER]", autoupdate="false" }
+Switch AV_DirecTV_IR_Dash "DirecTV -" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_DOT]", autoupdate="false" }
+Switch AV_DirecTV_IR_Format "DirecTV Format" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_F]", autoupdate="false" }
+Switch AV_DirecTV_IR_Stop "DirecTV Stop" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_STOP]", autoupdate="false" }
+Switch AV_DirecTV_IR_Undo "DirecTV Undo" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_UNDO]", autoupdate="false" }
+Switch AV_DirecTV_IR_Previous "DirecTV Previous" (gMR_MC_IR_DirecTV) { exec=">[ON:/usr/bin/irsend SEND_ONCE directv KEY_PREVIOUS]", autoupdate="false" }
+Number AV_DirecTV_IR_Number "DirecTV Number" (gMR_MC_IR_DirecTV) { exec=">[0:/usr/bin/irsend SEND_ONCE directv KEY_0] >[1:/usr/bin/irsend SEND_ONCE directv KEY_1] >[2:/usr/bin/irsend SEND_ONCE directv KEY_2] >[3:/usr/bin/irsend SEND_ONCE directv KEY_3] >[4:/usr/bin/irsend SEND_ONCE directv KEY_4] >[5:/usr/bin/irsend SEND_ONCE directv KEY_5] >[6:/usr/bin/irsend SEND_ONCE directv KEY_6] >[7:/usr/bin/irsend SEND_ONCE directv KEY_7] >[8:/usr/bin/irsend SEND_ONCE directv KEY_8] >[9:/usr/bin/irsend SEND_ONCE directv KEY_9]", autoupdate="false" }

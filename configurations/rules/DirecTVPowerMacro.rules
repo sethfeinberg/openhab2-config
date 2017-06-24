@@ -1,0 +1,22 @@
+import org.openhab.core.library.types.*
+
+rule "DirecTV Power Macro ON"
+when
+	Item DirecTVPowerMacro received command ON
+then
+  sendCommand(AV_TV_IP_Power, ON)
+  sendCommand(AV_Denon3300_IP_MainPower, ON)
+	sendCommand(AV_DirecTV_IR_Power, ON)
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon3300_IP_AudioMovie, ON)
+  sendCommand(AV_Denon3300_IP_MainInputCBLSAT, ON)
+end
+
+rule "DirecTV Power Macro OFF"
+when
+	Item DirecTVPowerMacro received command OFF
+then
+	sendCommand(AV_DirecTV_IR_Power, OFF)
+  sendCommand(AV_TV_IP_Power, OFF)
+  sendCommand(AV_Denon3300_IP_MainPower, OFF)
+end

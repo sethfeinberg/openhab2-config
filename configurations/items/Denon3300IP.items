@@ -1,0 +1,53 @@
+/*  Main Room Media Center */
+/*   Main Room Media Center IP */
+/*    Main Room Media Center AVR Controls (IP) */
+/*     Main Room Media Center AVR Controls (IP) - Main Zone */
+Switch AV_Denon3300_IP_Power "Denon Unit Power" (gMR_MC_IP_Denon) { denon="avr3300#PW" }
+Switch AV_Denon3300_IP_MainPower "Denon Main Power" (gMR_MC_IP_Denon) { denon="avr3300#ZM" }
+/*      Main Room Media Center AVR Controls (IP) - Info Strings */
+String AV_Denon3300_IP_SurroundMode "Surround Mode [%s]" (gMR_MC_IP_Denon) { denon="avr3300#SURROUNDMODE" }
+String AV_Denon3300_IP_MainInput "Main Input: [%s]" (gMR_MC_IP_Denon) { denon="avr3300#INPUT" }
+String AV_Denon3300_IP_Z2Input "Z2 Input: [%s]" (gMR_MC_IP_Denon) { denon="avr3300#Z2SOURCE" }
+/*      Main Room Media Center AVR Controls (IP) - Main Zone Audio */
+Dimmer AV_Denon3300_IP_MainVolume "Denon Main Volume [%.1f]" (gMR_MC_IP_Denon) { denon="avr3300#MV" }
+Switch AV_Denon3300_IP_MainMute "Denon Main Mute" (gMR_MC_IP_Denon) { denon="avr3300#MU" }
+Switch AV_Denon3300_IP_AudioMovie "Denon audio(Movie)" (gMR_MC_IP_Denon) { denon="avr3300#MSMOVIE", autoupdate="false" }
+Switch AV_Denon3300_IP_AudioMusic "Denon audio(Music)" (gMR_MC_IP_Denon) { denon="avr3300#MSMUSIC", autoupdate="false" }
+Switch AV_Denon3300_IP_AudioGame "Denon audio(Game)" (gMR_MC_IP_Denon) { denon="avr3300#MSGAME", autoupdate="false" }
+Switch AV_Denon3300_IP_AudioDirect "Denon audio(Direct)" (gMR_MC_IP_Denon) { denon="avr3300#MSDIRECT", autoupdate="false" }
+Switch AV_Denon3300_IP_AudioMCHStereo "Denon audio(MCHStereo)" (gMR_MC_IP_Denon) { denon="avr3300#MSMCH STEREO" }
+Switch AV_Denon3300_IP_AudioPureDirect "Denon audio(Pure Direct)" (gMR_MC_IP_Denon) { denon="avr3300#MSPURE DIRECT" }
+/*      Main Room Media Center AVR Controls (IP) - Main Zone Inputs */
+Switch AV_Denon3300_IP_MainInputTV "Denon Main input(TV Audio)" (gMR_MC_IP_Denon) { denon="avr3300#SITV" }
+Switch AV_Denon3300_IP_MainInputAUX1 "Denon Main input(AUX1)" (gMR_MC_IP_Denon) { denon="avr3300#SIAUX1" }
+Switch AV_Denon3300_IP_MainInputAUX2 "Denon Main input(WiiU)" (gMR_MC_IP_Denon) { denon="avr3300#SIAUX2" }
+Switch AV_Denon3300_IP_MainInputOnlineMusic "Denon Main input(Online Music)" (gMR_MC_IP_Denon) { denon="avr3300#SINET" }
+Switch AV_Denon3300_IP_MainInputBluetooth "Denon Main input(Bluetooth)" (gMR_MC_IP_Denon) { denon="avr3300#SIBT" }
+Switch AV_Denon3300_IP_MainInputBluray "Denon Main input(Blu-ray)" (gMR_MC_IP_Denon) { denon="avr3300#SIBD" }
+Switch AV_Denon3300_IP_MainInputCBLSAT "Denon Main input(DirecTV)" (gMR_MC_IP_Denon) { denon="avr3300#SISAT/CBL" }
+Switch AV_Denon3300_IP_MainInputCD "Denon Main input(CD)" (gMR_MC_IP_Denon) { denon="avr3300#SICD" }
+Switch AV_Denon3300_IP_MainInputDVD "Denon Main input(Batcomputer)" (gMR_MC_IP_Denon) { denon="avr3300#SIDVD" }
+Switch AV_Denon3300_IP_MainInputTuner "Denon Main input(Tuner)" (gMR_MC_IP_Denon) { denon="avr3300#SITUNER" }
+Switch AV_Denon3300_IP_MainInputGame "Denon Main input(PS4)" (gMR_MC_IP_Denon) { denon="avr3300#SIGAME" }
+Switch AV_Denon3300_IP_MainInputInternetRadio "Denon Main input(Internet Radio)" (gMR_MC_IP_Denon) { denon="avr3300#SIIRADIO" }
+Switch AV_Denon3300_IP_MainInputMediaPlayer "Denon Main input(HELPeR)" (gMR_MC_IP_Denon) { denon="avr3300#SIMPLAY" }
+Switch AV_Denon3300_IP_MainInputUSB "Denon Main input(iPod/USB)" (gMR_MC_IP_Denon) { denon="avr3300#SIUSB/IPOD" }
+/*     Main Room Media Center AVR Controls (IP) - Zone 2 */
+Switch AV_Denon3300_IP_Z2Power "Denon Z2 Power" (gMR_MC_IP_Denon) { denon="avr3300#Z2" }
+Dimmer AV_Denon3300_IP_Z2Volume "Denon Z2 Volume [%.1f]" (gMR_MC_IP_Denon) { denon="avr3300#Z2ZV" }
+Switch AV_Denon3300_IP_Z2Mute "Denon Z2 Mute" (gMR_MC_IP_Denon) { denon="avr3300#Z2MU" }
+/*      Main Room Media Center AVR Controls (IP) - Zone 2 Inputs */
+Switch AV_Denon3300_IP_Z2InputTV "Denon Z2 input(TV Audio)" (gMR_MC_IP_Denon) { denon="avr3300#Z2TV" }
+Switch AV_Denon3300_IP_Z2InputAUX1 "Denon Z2 input(AUX1)" (gMR_MC_IP_Denon) { denon="avr3300#Z2AUX1" }
+Switch AV_Denon3300_IP_Z2InputAUX2 "Denon Z2 input(WiiU)" (gMR_MC_IP_Denon) { denon="avr3300#Z2AUX2" }
+Switch AV_Denon3300_IP_Z2InputOnlineMusic "Denon Z2 input(Online Music)" (gMR_MC_IP_Denon) { denon="avr3300#Z2NET" }
+Switch AV_Denon3300_IP_Z2InputBluetooth "Denon Z2 input(Bluetooth)" (gMR_MC_IP_Denon) { denon="avr3300#Z2BT" }
+Switch AV_Denon3300_IP_Z2InputBluray "Denon Z2 input(Blu-ray)" (gMR_MC_IP_Denon) { denon="avr3300#Z2BD" }
+Switch AV_Denon3300_IP_Z2InputCBLSAT "Denon Z2 input(DirecTV)" (gMR_MC_IP_Denon) { denon="avr3300#Z2SAT/CBL" }
+Switch AV_Denon3300_IP_Z2InputCD "Denon Z2 input(CD)" (gMR_MC_IP_Denon) { denon="avr3300#Z2CD" }
+Switch AV_Denon3300_IP_Z2InputDVD "Denon Z2 input(Batcomputer)" (gMR_MC_IP_Denon) { denon="avr3300#Z2DVD" }
+Switch AV_Denon3300_IP_Z2InputTuner "Denon Z2 input(Tuner)" (gMR_MC_IP_Denon) { denon="avr3300#Z2TUNER" }
+Switch AV_Denon3300_IP_Z2InputGame "Denon Z2 input(PS4)" (gMR_MC_IP_Denon) { denon="avr3300#Z2GAME" }
+Switch AV_Denon3300_IP_Z2InputInternetRadio "Denon Z2 input(Internet Radio)" (gMR_MC_IP_Denon) { denon="avr3300#Z2IRADIO" }
+Switch AV_Denon3300_IP_Z2InputMediaPlayer "Denon Z2 input(HELPeR)" (gMR_MC_IP_Denon) { denon="avr3300#Z2MPLAY" }
+Switch AV_Denon3300_IP_Z2InputUSB "Denon Z2 input(iPod/USB)" (gMR_MC_IP_Denon) { denon="avr3300#Z2USB/IPOD" }

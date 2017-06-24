@@ -1,0 +1,22 @@
+import org.openhab.core.library.types.*
+
+rule "Bluray Power Macro ON"
+when
+	Item BlurayPowerMacro received command ON
+then
+  sendCommand(AV_TV_IP_Power, ON)
+  sendCommand(AV_Denon3300_IP_Power, ON)
+	sendCommand(AV_Bluray_IR_Power, ON)
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon3300_IP_AudioMovie, ON)
+  sendCommand(AV_Denon3300_IP_MainInputBluray, ON)
+end
+
+rule "Bluray Power Macro OFF"
+when
+	Item BlurayPowerMacro received command OFF
+then
+  sendCommand(AV_TV_IP_Power, OFF)
+	sendCommand(AV_Bluray_IR_Power, OFF)
+  sendCommand(AV_Denon3300_IP_Power, OFF)
+end

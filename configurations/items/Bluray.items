@@ -1,0 +1,45 @@
+/*  Main Room Media Center */
+/*   Main Room Media Center IR */
+/*    Main Room Media Center Blu-ray IR Controls */
+Switch AV_Bluray_IR_Power "Blu-ray Power" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_POWER] >[OFF:/usr/bin/irsend SEND_ONCE bluray KEY_POWER]" }
+Switch AV_Bluray_IR_Option "Blu-ray Option" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_Option]", autoupdate="false" }
+Switch AV_Bluray_IR_Open "Blu-ray Open/Close" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_OPEN] >[OFF:/usr/bin/irsend SEND_ONCE bluray KEY_OPEN]" }
+Switch AV_Bluray_IR_Red "Blu-ray Red" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_RED]", autoupdate="false" }
+Switch AV_Bluray_IR_Green "Blu-ray Green" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_GREEN]", autoupdate="false" }
+Switch AV_Bluray_IR_Blue "Blu-ray Blue" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_BLUE]", autoupdate="false" }
+Switch AV_Bluray_IR_Yellow "Blu-ray Yellow" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_YELLOW]", autoupdate="false" }
+Switch AV_Bluray_IR_Menu "Blu-ray Menu" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_MENU]", autoupdate="false" }
+Switch AV_Bluray_IR_Info "Blu-ray Info" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_INFO]", autoupdate="false" }
+Switch AV_Bluray_IR_Up "Blu-ray Up" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_UP]", autoupdate="false" }
+Switch AV_Bluray_IR_Down "Blu-ray Down" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_DOWN]", autoupdate="false" }
+Switch AV_Bluray_IR_Left "Blu-ray Left" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_LEFT]", autoupdate="false" }
+Switch AV_Bluray_IR_Right "Blu-ray Right" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_RIGHT]", autoupdate="false" }
+Switch AV_Bluray_IR_OK "Blu-ray OK" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_OK]", autoupdate="false" }
+Switch AV_Bluray_IR_Setup "Blu-ray Setup" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_SETUP]", autoupdate="false" }
+Switch AV_Bluray_IR_Back "Blu-ray Back" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_BACK]", autoupdate="false" }
+Switch AV_Bluray_IR_Rewind "Blu-ray Rewind" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_REWIND]", autoupdate="false" }
+Switch AV_Bluray_IR_Play "Blu-ray Play" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_PLAY]", autoupdate="false" }
+Switch AV_Bluray_IR_FF "Blu-ray Fast Forward" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_FASTFORWARD]", autoupdate="false" }
+Switch AV_Bluray_IR_Previous "Blu-ray Previous" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_PREVIOUS]", autoupdate="false" }
+Switch AV_Bluray_IR_Stop "Blu-ray Stop" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_STOP]", autoupdate="false" }
+Switch AV_Bluray_IR_Pause "Blu-ray Pause" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_PAUSE]", autoupdate="false" }
+Switch AV_Bluray_IR_Next "Blu-ray Next" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_NEXT]", autoupdate="false" }
+Switch AV_Bluray_IR_1 "Blu-ray 1" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_1]", autoupdate="false" }
+Switch AV_Bluray_IR_2 "Blu-ray 2" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_2]", autoupdate="false" }
+Switch AV_Bluray_IR_3 "Blu-ray 3" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_3]", autoupdate="false" }
+Switch AV_Bluray_IR_4 "Blu-ray 4" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_4]", autoupdate="false" }
+Switch AV_Bluray_IR_5 "Blu-ray 5" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_5]", autoupdate="false" }
+Switch AV_Bluray_IR_6 "Blu-ray 6" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_6]", autoupdate="false" }
+Switch AV_Bluray_IR_7 "Blu-ray 7" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_7]", autoupdate="false" }
+Switch AV_Bluray_IR_8 "Blu-ray 8" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_8]", autoupdate="false" }
+Switch AV_Bluray_IR_9 "Blu-ray 9" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_9]", autoupdate="false" }
+Switch AV_Bluray_IR_0 "Blu-ray 0" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_0]", autoupdate="false" }
+Switch AV_Bluray_IR_Angle "Blu-ray Angle" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_ANGLE]", autoupdate="false" }
+Switch AV_Bluray_IR_Subtitle "Blu-ray Subtitle" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_SUBTITLE]", autoupdate="false" }
+Switch AV_Bluray_IR_Audio "Blu-ray Audio" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_AUDIO]", autoupdate="false" }
+Switch AV_Bluray_IR_Mode "Blu-ray Mode" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_MODE]", autoupdate="false" }
+Switch AV_Bluray_IR_Repeat "Blu-ray Repeat" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_AGAIN]", autoupdate="false" }
+Switch AV_Bluray_IR_Display "Blu-ray Display" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_D]", autoupdate="false" }
+Switch AV_Bluray_IR_Clear "Blu-ray Clear" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_CLEAR]", autoupdate="false" }
+Switch AV_Bluray_IR_Search "Blu-ray Search" (gMR_MC_IR_Bluray) { exec=">[ON:/usr/bin/irsend SEND_ONCE bluray KEY_S]", autoupdate="false" }
+Number AV_Bluray_IR_Number "Blu-ray Number" (gMR_MC_IR_Bluray) { exec=">[0:/usr/bin/irsend SEND_ONCE bluray KEY_0] >[1:/usr/bin/irsend SEND_ONCE bluray KEY_1] >[2:/usr/bin/irsend SEND_ONCE bluray KEY_2] >[3:/usr/bin/irsend SEND_ONCE bluray KEY_3] >[4:/usr/bin/irsend SEND_ONCE bluray KEY_4] >[5:/usr/bin/irsend SEND_ONCE bluray KEY_5] >[6:/usr/bin/irsend SEND_ONCE bluray KEY_6] >[7:/usr/bin/irsend SEND_ONCE bluray KEY_7] >[8:/usr/bin/irsend SEND_ONCE bluray KEY_8] >[9:/usr/bin/irsend SEND_ONCE bluray KEY_9]", autoupdate="false" }

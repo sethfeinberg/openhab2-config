@@ -1,0 +1,21 @@
+import org.openhab.core.library.types.*
+
+rule "Batcomputer Power Macro ON"
+when
+	Item BatcomputerPowerMacro received command ON
+then
+  sendCommand(AV_Batcomputer_IP_WoL, ON)
+  sendCommand(AV_TV_IP_Power, ON)
+  sendCommand(AV_Denon3300_IP_Power, ON)
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon3300_IP_AudioDirect, ON)
+  sendCommand(AV_Denon3300_IP_MainInputDVD, ON)
+end
+
+rule "Batcomputer Power Macro OFF"
+when
+	Item BatcomputerPowerMacro received command OFF
+then
+  sendCommand(AV_TV_IP_Power, OFF)
+  sendCommand(AV_Denon3300_IP_Power, OFF)
+end

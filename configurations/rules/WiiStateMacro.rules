@@ -1,0 +1,10 @@
+import org.openhab.core.library.types.*
+
+rule "Wii State Macro"
+when
+	Item WiiStateMacro received command
+then
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon3300_IP_AudioGame, ON)
+  sendCommand(AV_Denon3300_IP_MainInputAUX2, ON)
+end

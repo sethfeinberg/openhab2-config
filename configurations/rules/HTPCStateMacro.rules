@@ -1,0 +1,11 @@
+import org.openhab.core.library.types.*
+
+rule "HTPC State Macro"
+when
+	Item HTPCStateMacro received command ON
+then
+  sendCommand(AV_HELPeR_IP_WoL, ON)
+  sendCommand(AV_TV_IP_InputHDMI4, ON)
+  sendCommand(AV_Denon3300_IP_AudioDirect, ON)
+  sendCommand(AV_Denon3300_IP_MainInputMediaPlayer, ON)
+end
